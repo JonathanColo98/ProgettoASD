@@ -1,10 +1,4 @@
 
-/*
- * 	Jonathan Colombo 	7011579
- * 	Jacopo Manetti 		7003888
- * 	Tommaso Santi     	7013977
- */
-
 package progetto.albero_m_ario;
 
 

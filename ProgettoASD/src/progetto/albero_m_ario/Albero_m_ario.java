@@ -1,11 +1,4 @@
 
-/*
- * 	Jonathan Colombo	7011579
- * 	Jacopo Manetti   	7003888
- * 	Tommaso Santi	 	7013977
- * 
- */
-
 package progetto.albero_m_ario;
 
 import java.util.LinkedList;
@@ -14,17 +7,17 @@ import java.util.Stack;
 
 public class Albero_m_ario {
 	private Nodo_m_ario radice; // nodo radice 
-	private static int m; // numero max di figli di ogni nodo (ariet‡ dell'albero)
+	private static int m; // numero max di figli di ogni nodo (ariet√† dell'albero)
 	private int numNodi; // numero dei nodi interni inseriti nell'albero 
 	private int altezza; // altezza dell'albero
 	private int numFoglie;// alternativa alla gestione ricorsiva per calcolo del numero di foglie 
 	
-	//costruttore che contiene solo l'ariet‡
+	//costruttore che contiene solo l'ariet√†
 	public Albero_m_ario(int m) {
 		Albero_m_ario.m = m;
 	}
 	
-	// restituisce l'ariet‡ dell'albero
+	// restituisce l'ariet√† dell'albero
 	public static int m() {
 		return m;
 	}
@@ -66,7 +59,7 @@ public class Albero_m_ario {
 			return V;
 		}
 		
-		// 3) Inserimento della radice di cui ne Ë presente gi‡ una
+		// 3) Inserimento della radice di cui ne √® presente gi√† una
 		public Nodo_m_ario aggiungiNuovaRadice(Nodo_m_ario radiceNuova,int i) {
 			if(radice != null) {
 				radiceNuova.getFigli()[i]= radice;
@@ -80,7 +73,7 @@ public class Albero_m_ario {
 			return radice;
 		}
 		
-		// 4)	Visita in profondit‡ (visita anticipata) 
+		// 4)	Visita in profondit√† (visita anticipata) 
 		public LinkedList<String> visitaAnticipata(){
 			Stack<Nodo_m_ario> pila = new Stack<>(); 	//Struttura di servizio.
 			LinkedList<String> nodiAlbero = new LinkedList<>();	//Conterra' i nodi visitati.
